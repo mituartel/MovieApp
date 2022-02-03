@@ -25,12 +25,14 @@ class PrimeraPantallaViewController: UIViewController {
     
     @IBAction func RegisterButtonPressed(_ sender: UIButton) {
         let PantallaRegistroViewController = PantallaRegistroViewController()
-        present(PantallaRegistroViewController, animated: true, completion: nil)
+            PantallaRegistroViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+            present(PantallaRegistroViewController, animated: true, completion: nil)
     }
     
     @IBAction func LogInButtonPressed(_ sender: UIButton) {
-        let PantallaLoginViewController = PantallaLogInViewController()
-        present(PantallaLoginViewController, animated: true, completion: nil)
+        let PantallaLogInViewController = PantallaLogInViewController()
+        PantallaLogInViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+            present(PantallaLogInViewController, animated: true, completion: nil)
     }
 }
 

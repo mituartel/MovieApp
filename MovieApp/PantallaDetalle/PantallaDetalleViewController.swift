@@ -16,6 +16,9 @@ class PantallaDetalleViewController: UIViewController {
     }
 
 
+    @IBAction func goBackButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

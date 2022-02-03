@@ -16,8 +16,15 @@ class PantallaLogInViewController: UIViewController {
     }
 
     @IBAction func logInButtonPressed(_ sender: UIButton) {
-        let PantallaPrincipal = PantallaPrincipalViewController()
-        present(PantallaPrincipal, animated: true, completion: nil)
+        let PrincipalViewController = PantallaPrincipalViewController()
+            PrincipalViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+            present(PrincipalViewController, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        
     }
     
     /*
