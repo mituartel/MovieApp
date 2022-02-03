@@ -17,6 +17,7 @@ class MovieTableViewCell: UITableViewCell {
     
     private var urlString: String = ""
     
+    
     // Setup movies values
     func setCellWithValuesOf(_ movie:Movie) {
         updateUI(title: movie.title, releaseDate: movie.year, rating: movie.rate, overview: movie.overview, poster: movie.posterImage)
@@ -69,6 +70,9 @@ class MovieTableViewCell: UITableViewCell {
         }.resume()
     }
     
+    
+    
+    
     // MARK: - Convert date format
     func convertDateFormater(_ date: String?) -> String {
         var fixDate = ""
@@ -82,5 +86,7 @@ class MovieTableViewCell: UITableViewCell {
         }
         return fixDate
     }
+    
 }
+
 

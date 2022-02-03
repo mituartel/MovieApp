@@ -26,18 +26,21 @@
                     <color key="textColor" systemColor="systemTealColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5tp-SL-tfq">
-                    <rect key="frame" x="0.0" y="108" width="410" height="788"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5tp-SL-tfq">
+                    <rect key="frame" x="0.0" y="71.5" width="410" height="824.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="5tp-SL-tfq" secondAttribute="bottom" id="3LA-ww-6a3"/>
+                <constraint firstItem="5tp-SL-tfq" firstAttribute="leading" secondItem="QFh-y2-IsT" secondAttribute="leading" id="4aa-VK-kHb"/>
                 <constraint firstItem="QFh-y2-IsT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6gH-Bp-zdr"/>
                 <constraint firstItem="QFh-y2-IsT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Yhb-L4-gta"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QFh-y2-IsT" secondAttribute="trailing" id="bng-5i-8gg"/>
+                <constraint firstItem="5tp-SL-tfq" firstAttribute="top" secondItem="QFh-y2-IsT" secondAttribute="bottom" id="qzN-vP-R40"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5tp-SL-tfq" secondAttribute="trailing" constant="4" id="sIy-7J-7JO"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
         </view>

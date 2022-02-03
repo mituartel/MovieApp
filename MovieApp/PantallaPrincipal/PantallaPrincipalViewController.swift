@@ -15,8 +15,10 @@ class PantallaPrincipalViewController: UIViewController {
     private var viewModel = MovieViewModel()
 
         override func viewDidLoad() {
-            super.viewDidLoad()
             
+            super.viewDidLoad()
+            self.tableView.delegate = self
+            tableView.allowsSelection = true
             tableView.register(UINib(nibName: "MovieTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
             
             
@@ -29,7 +31,10 @@ class PantallaPrincipalViewController: UIViewController {
                 self?.tableView.reloadData()
             }
         }
-    }
+    
+    
+}
+    
 
     // MARK: - TableView
     extension PantallaPrincipalViewController: UITableViewDataSource {
@@ -45,5 +50,16 @@ class PantallaPrincipalViewController: UIViewController {
             
             return cell
         }
+        
     }
 
+    extension PantallaPrincipalViewController: UITableViewDelegate {
+        
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+            let DetalleViewController = PantallaDetalleViewController()
+                DetalleViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+                present(DetalleViewController, animated: true, completion: nil)
+
+            }
+}
