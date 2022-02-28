@@ -10,8 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrimeraPantallaViewController" customModule="MovieApp" customModuleProvider="target">
             <connections>
-                <outlet property="registerButton" destination="Ocf-D4-67b" id="klA-3e-tf7"/>
-                <outlet property="titleLabel" destination="hCJ-Tc-asW" id="gsJ-BX-GEQ"/>
+                <outlet property="loginButton" destination="4o6-Jy-yoJ" id="U8m-3R-9dz"/>
+                <outlet property="registerButton" destination="OXx-Cw-uRh" id="Yua-01-fq5"/>
                 <outlet property="view" destination="iN0-l3-epB" id="hz1-g3-CkX"/>
             </connections>
         </placeholder>
@@ -20,47 +20,55 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCJ-Tc-asW">
-                    <rect key="frame" x="134" y="336" width="147" height="68"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GradientMovieApp" translatesAutoresizingMaskIntoConstraints="NO" id="8Ix-r2-Xl5">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4o6-Jy-yoJ">
+                    <rect key="frame" x="74" y="635" width="266" height="57"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGf-Ej-CdQ">
-                    <rect key="frame" x="67" y="747" width="281" height="59"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemGreenColor"/>
-                    <color key="tintColor" systemColor="systemGreenColor"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Iniciar Sesion">
-                        <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                    <buttonConfiguration key="configuration" style="filled" title="LOGIN" cornerStyle="capsule">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                        <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="LogInButtonPressed:" destination="-1" eventType="touchUpInside" id="Emf-vy-VIt"/>
+                        <action selector="LogInButtonPressed:" destination="-1" eventType="touchUpInside" id="gu0-bc-9es"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocf-D4-67b">
-                    <rect key="frame" x="67" y="648" width="281" height="59"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXx-Cw-uRh">
+                    <rect key="frame" x="74" y="545" width="266" height="57"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Registrarse"/>
+                    <buttonConfiguration key="configuration" style="filled" title="REGISTER" cornerStyle="capsule">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
                     <connections>
-                        <action selector="RegisterButtonPressed:" destination="-1" eventType="touchUpInside" id="Jkb-Tw-bQa"/>
+                        <action selector="RegisterButtonPressed:" destination="-1" eventType="touchUpInside" id="btr-EF-sVh"/>
                     </connections>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Trending (2)" translatesAutoresizingMaskIntoConstraints="NO" id="UNK-tw-xDe">
+                    <rect key="frame" x="47" y="272" width="320" height="191"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8Ix-r2-Xl5" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="4xY-HR-384"/>
+                <constraint firstItem="8Ix-r2-Xl5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5OV-cf-c9y"/>
+                <constraint firstItem="8Ix-r2-Xl5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5h1-0E-5YQ"/>
+                <constraint firstAttribute="bottom" secondItem="8Ix-r2-Xl5" secondAttribute="bottom" id="Fs5-DH-U0O"/>
+            </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="65.625"/>
         </view>
     </objects>
     <resources>
+        <image name="GradientMovieApp" width="5788" height="3265"/>
+        <image name="Trending (2)" width="500" height="500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

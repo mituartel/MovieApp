@@ -19,38 +19,42 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peliculas populares" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFh-y2-IsT">
-                    <rect key="frame" x="0.0" y="44" width="414" height="27.5"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                    <color key="textColor" systemColor="systemTealColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most Popular Movies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFh-y2-IsT">
+                    <rect key="frame" x="0.0" y="44" width="414" height="24"/>
+                    <color key="backgroundColor" red="0.24313725490196078" green="0.023529411764705882" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5tp-SL-tfq">
-                    <rect key="frame" x="0.0" y="71.5" width="410" height="824.5"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <rect key="frame" x="0.0" y="68" width="414" height="828"/>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" red="0.24313725490196078" green="0.023529411764705882" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" systemColor="labelColor"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.24313725489999999" green="0.023529411760000001" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="5tp-SL-tfq" secondAttribute="bottom" id="3LA-ww-6a3"/>
-                <constraint firstItem="5tp-SL-tfq" firstAttribute="leading" secondItem="QFh-y2-IsT" secondAttribute="leading" id="4aa-VK-kHb"/>
-                <constraint firstItem="QFh-y2-IsT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6gH-Bp-zdr"/>
+                <constraint firstItem="5tp-SL-tfq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4aa-VK-kHb"/>
+                <constraint firstItem="QFh-y2-IsT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6gH-Bp-zdr"/>
+                <constraint firstItem="5tp-SL-tfq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EWj-k6-rNg"/>
+                <constraint firstItem="5tp-SL-tfq" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="EnH-Av-rMb"/>
                 <constraint firstItem="QFh-y2-IsT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Yhb-L4-gta"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QFh-y2-IsT" secondAttribute="trailing" id="bng-5i-8gg"/>
+                <constraint firstAttribute="trailing" secondItem="QFh-y2-IsT" secondAttribute="trailing" id="bng-5i-8gg"/>
                 <constraint firstItem="5tp-SL-tfq" firstAttribute="top" secondItem="QFh-y2-IsT" secondAttribute="bottom" id="qzN-vP-R40"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5tp-SL-tfq" secondAttribute="trailing" constant="4" id="sIy-7J-7JO"/>
+                <constraint firstAttribute="bottom" secondItem="5tp-SL-tfq" secondAttribute="bottom" id="rci-Gg-TYB"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

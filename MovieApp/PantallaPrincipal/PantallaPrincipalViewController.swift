@@ -13,6 +13,7 @@ class PantallaPrincipalViewController: UIViewController {
     
     
     private var viewModel = MovieViewModel()
+    let movies = [Movie]()
 
         override func viewDidLoad() {
             
@@ -31,8 +32,6 @@ class PantallaPrincipalViewController: UIViewController {
                 self?.tableView.reloadData()
             }
         }
-    
-    
 }
     
 
@@ -55,11 +54,25 @@ class PantallaPrincipalViewController: UIViewController {
 
     extension PantallaPrincipalViewController: UITableViewDelegate {
         
+        
+        
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            
+            print("You selected cell #\(String(describing: [indexPath.row]))!")
+           
+           // let cell = self.tableView.cellForRow(at: indexPath) as! MovieTableViewCell
+            
+          //  let destination = PantallaDetalleViewController(nibName: "PantallaDetalleViewController", bundle: nil)
+            
+      //      destination.movieTitle.text = cell.movieTitle.text
+      //      destination.movieRate.text = cell.movieRate.text
+            
 
-            let DetalleViewController = PantallaDetalleViewController()
-                DetalleViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
-                present(DetalleViewController, animated: true, completion: nil)
+            let PantallaDetalleViewController = PantallaDetalleViewController()
+            PantallaDetalleViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+                present(PantallaDetalleViewController, animated: true, completion: nil)
+        }
 
-            }
-}
+ }
+
+

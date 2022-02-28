@@ -10,13 +10,14 @@ import UIKit
 class PrimeraPantallaViewController: UIViewController {
 
   
-    @IBOutlet var titleLabel: UILabel!
-    
     @IBOutlet var registerButton: UIButton!
     
+    @IBOutlet var loginButton: UIButton!
+    
+
+    
     override func viewDidLoad() {
-        
-        titleLabel.text = "🍿Movie"
+
         
         super.viewDidLoad()
         

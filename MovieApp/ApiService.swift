@@ -15,6 +15,8 @@ class ApiService {
         
         let popularMoviesURL = "https://api.themoviedb.org/3/movie/popular?api_key=79e46102e1a3a1e8b4e729b79631cec0&language=en-US&page=1"
         
+       // let movieDetail = "https://api.themoviedb.org/3/movie/157336?api_key=79e46102e1a3a1e8b4e729b79631cec0&append_to_response=videos"
+        
         guard let url = URL(string: popularMoviesURL) else {return}
         
         // Create URL Session - work on the background
