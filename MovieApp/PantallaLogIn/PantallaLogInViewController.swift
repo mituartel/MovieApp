@@ -6,9 +6,14 @@
 //
 
 import UIKit
+import Firebase
 
 class PantallaLogInViewController: UIViewController {
 
+    @IBOutlet var emailTextField: UITextField!
+    
+    @IBOutlet var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,11 +21,26 @@ class PantallaLogInViewController: UIViewController {
     }
 
     @IBAction func logInButtonPressed(_ sender: UIButton) {
-        let PrincipalViewController = PantallaPrincipalViewController()
-            PrincipalViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
-            present(PrincipalViewController, animated: true, completion: nil)
+        if let email = emailTextField.text , let password = passwordTextField.text {
+            
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+            if let e = error {
+                    let alert = UIAlertController(title: "Error", message: e.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Dissmiss", style: .cancel, handler: { action in
+                        print("tapped dissmiss")
+                    }))
+                    self?.present(alert, animated: true)
+            } else {
+                let PrincipalViewController = PantallaPrincipalViewController()
+                    PrincipalViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+                self?.present(PrincipalViewController, animated: true, completion: nil)
+            }
+            }
+          // ...
+        }
     }
-    
+        
+
     
     @IBAction func backButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)

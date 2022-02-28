@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class PantallaPrincipalViewController: UIViewController {
 
@@ -32,6 +33,20 @@ class PantallaPrincipalViewController: UIViewController {
                 self?.tableView.reloadData()
             }
         }
+    @IBAction func logOutButtonPressed(_ sender: UIBarButtonItem) {
+
+    do {
+      try Auth.auth().signOut()
+        
+        let PrimeraPantallaViewController = PrimeraPantallaViewController()
+            PrimeraPantallaViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        self.present(PrimeraPantallaViewController, animated: true, completion: nil)
+    }
+        catch let signOutError as NSError {
+      print("Error signing out: %@", signOutError)
+    }
+        
+  }
 }
     
 
@@ -73,6 +88,7 @@ class PantallaPrincipalViewController: UIViewController {
                 present(PantallaDetalleViewController, animated: true, completion: nil)
         }
 
+        
  }
 
 
