@@ -30,7 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9944131227A9BD0300A1C021 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9944131227A9BD0300A1C021 /* Trending Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trending Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9944131527A9BD0300A1C021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9944131727A9BD0300A1C021 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9944131927A9BD0300A1C021 /* PrimeraPantallaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeraPantallaViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		9944131327A9BD0300A1C021 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9944131227A9BD0300A1C021 /* MovieApp.app */,
+				9944131227A9BD0300A1C021 /* Trending Movies.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9944131127A9BD0300A1C021 /* MovieApp */ = {
+		9944131127A9BD0300A1C021 /* Trending Movies */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9944132927A9BD0500A1C021 /* Build configuration list for PBXNativeTarget "MovieApp" */;
+			buildConfigurationList = 9944132927A9BD0500A1C021 /* Build configuration list for PBXNativeTarget "Trending Movies" */;
 			buildPhases = (
 				9944130E27A9BD0300A1C021 /* Sources */,
 				9944130F27A9BD0300A1C021 /* Frameworks */,
@@ -172,9 +172,9 @@
 			);
 			dependencies = (
 			);
-			name = MovieApp;
+			name = "Trending Movies";
 			productName = MovieApp;
-			productReference = 9944131227A9BD0300A1C021 /* MovieApp.app */;
+			productReference = 9944131227A9BD0300A1C021 /* Trending Movies.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -205,7 +205,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9944131127A9BD0300A1C021 /* MovieApp */,
+				9944131127A9BD0300A1C021 /* Trending Movies */,
 			);
 		};
 /* End PBXProject section */
@@ -388,6 +388,7 @@
 				DEVELOPMENT_TEAM = MFD493Y84X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Trending Movies";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -415,6 +416,7 @@
 				DEVELOPMENT_TEAM = MFD493Y84X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Trending Movies";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -444,7 +446,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9944132927A9BD0500A1C021 /* Build configuration list for PBXNativeTarget "MovieApp" */ = {
+		9944132927A9BD0500A1C021 /* Build configuration list for PBXNativeTarget "Trending Movies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9944132A27A9BD0500A1C021 /* Debug */,
