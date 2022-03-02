@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PantallaPrincipalViewController" customModule="Trending_Movies" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="5tp-SL-tfq" id="ZqZ-05-laa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5tp-SL-tfq">
+                    <rect key="frame" x="0.0" y="88" width="390" height="776"/>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" red="0.24313725490196078" green="0.023529411764705882" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" systemColor="labelColor"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ar-5e-ozv">
+                    <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                    <color key="barTintColor" red="0.24313725489999999" green="0.023529411760000001" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Most Popular Movies" id="Wog-Ac-foy">
+                            <barButtonItem key="rightBarButtonItem" title="Log Out" id="5Wy-4v-TcS">
+                                <color key="tintColor" red="0.5568627451" green="0.019607843140000001" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="logOutButtonPressed:" destination="-1" id="OtW-IE-E7W"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.24313725489999999" green="0.023529411760000001" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5tp-SL-tfq" firstAttribute="top" secondItem="9Ar-5e-ozv" secondAttribute="bottom" id="MJc-zb-3EH"/>
+                <constraint firstItem="5tp-SL-tfq" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="QJb-Cn-2tw"/>
+                <constraint firstItem="9Ar-5e-ozv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cGw-oT-qvS"/>
+                <constraint firstAttribute="bottom" secondItem="5tp-SL-tfq" secondAttribute="bottom" constant="-20" id="joX-C7-Tiv"/>
+                <constraint firstItem="5tp-SL-tfq" firstAttribute="top" secondItem="9Ar-5e-ozv" secondAttribute="bottom" id="kVT-3c-X79"/>
+                <constraint firstItem="5tp-SL-tfq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lxF-wm-yOU"/>
+                <constraint firstAttribute="trailing" secondItem="9Ar-5e-ozv" secondAttribute="trailing" id="n2j-d1-KyP"/>
+                <constraint firstItem="9Ar-5e-ozv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nno-It-Xsd"/>
+                <constraint firstItem="5tp-SL-tfq" firstAttribute="top" secondItem="9Ar-5e-ozv" secondAttribute="bottom" id="ryp-lN-fto"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
