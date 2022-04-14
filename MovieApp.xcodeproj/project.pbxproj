@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		991E6C5428077485002E6BF3 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E6C5228077485002E6BF3 /* MovieCollectionViewCell.swift */; };
 		991E6C5528077485002E6BF3 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 991E6C5328077485002E6BF3 /* MovieCollectionViewCell.xib */; };
+		991E6C58280899C0002E6BF3 /* SliderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E6C57280899C0002E6BF3 /* SliderService.swift */; };
+		991E6C5A28089A56002E6BF3 /* SliderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E6C5928089A56002E6BF3 /* SliderList.swift */; };
+		991E6C5D28089A73002E6BF3 /* SliderListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E6C5C28089A73002E6BF3 /* SliderListResponse.swift */; };
 		993CEA4D27CD4F6A00811AE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 993CEA4C27CD4F6A00811AE3 /* GoogleService-Info.plist */; };
 		9944131627A9BD0300A1C021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9944131527A9BD0300A1C021 /* AppDelegate.swift */; };
 		9944131827A9BD0300A1C021 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9944131727A9BD0300A1C021 /* SceneDelegate.swift */; };
@@ -39,6 +42,9 @@
 		60E5EC78338E9DE46BC10D1D /* Pods-Trending Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trending Movies.release.xcconfig"; path = "Target Support Files/Pods-Trending Movies/Pods-Trending Movies.release.xcconfig"; sourceTree = "<group>"; };
 		991E6C5228077485002E6BF3 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		991E6C5328077485002E6BF3 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		991E6C57280899C0002E6BF3 /* SliderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderService.swift; sourceTree = "<group>"; };
+		991E6C5928089A56002E6BF3 /* SliderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderList.swift; sourceTree = "<group>"; };
+		991E6C5C28089A73002E6BF3 /* SliderListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderListResponse.swift; sourceTree = "<group>"; };
 		993CEA4C27CD4F6A00811AE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9944131227A9BD0300A1C021 /* Trending Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trending Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9944131527A9BD0300A1C021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +122,8 @@
 		990B65A328063B7700F259B8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				991E6C5C28089A73002E6BF3 /* SliderListResponse.swift */,
+				991E6C5928089A56002E6BF3 /* SliderList.swift */,
 				9944134327AA048500A1C021 /* Model.swift */,
 			);
 			path = Models;
@@ -164,6 +172,7 @@
 		990B65A828063BF000F259B8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				991E6C56280899A6002E6BF3 /* Services */,
 				990B65B52806597400F259B8 /* ViewModel */,
 				990B65B42806596100F259B8 /* ViewController */,
 				990B65B32806595300F259B8 /* View */,
@@ -293,6 +302,14 @@
 				9944133F27A9E84300A1C021 /* PantallaDetalleViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		991E6C56280899A6002E6BF3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				991E6C57280899C0002E6BF3 /* SliderService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		9944130927A9BD0300A1C021 = {
@@ -465,12 +482,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9944134427AA048500A1C021 /* Model.swift in Sources */,
+				991E6C5D28089A73002E6BF3 /* SliderListResponse.swift in Sources */,
 				991E6C5428077485002E6BF3 /* MovieCollectionViewCell.swift in Sources */,
+				991E6C58280899C0002E6BF3 /* SliderService.swift in Sources */,
 				9944131A27A9BD0300A1C021 /* PrimeraPantallaViewController.swift in Sources */,
 				9944131627A9BD0300A1C021 /* AppDelegate.swift in Sources */,
 				9944133D27A9E82C00A1C021 /* PantallaPrincipalViewController.swift in Sources */,
 				9944132027A9BD0300A1C021 /* MovieApp.xcdatamodeld in Sources */,
 				9944133927A9E81500A1C021 /* PantallaLogInViewController.swift in Sources */,
+				991E6C5A28089A56002E6BF3 /* SliderList.swift in Sources */,
 				9944134627AA062D00A1C021 /* ApiService.swift in Sources */,
 				9944134127A9E84300A1C021 /* PantallaDetalleViewController.swift in Sources */,
 				9944134827AA1A1E00A1C021 /* MovieViewModel.swift in Sources */,

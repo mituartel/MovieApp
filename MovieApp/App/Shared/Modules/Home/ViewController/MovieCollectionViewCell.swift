@@ -9,6 +9,8 @@ import UIKit
 
 class MovieCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet var posterSlider: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
