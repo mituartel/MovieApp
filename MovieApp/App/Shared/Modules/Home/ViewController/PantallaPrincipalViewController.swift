@@ -12,6 +12,7 @@ class PantallaPrincipalViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
+    @IBOutlet var movieSlider: UICollectionView!
     
     private var viewModel = MovieViewModel()
     let movies = [Movie]()

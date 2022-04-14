@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		991E6C5428077485002E6BF3 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E6C5228077485002E6BF3 /* MovieCollectionViewCell.swift */; };
+		991E6C5528077485002E6BF3 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 991E6C5328077485002E6BF3 /* MovieCollectionViewCell.xib */; };
 		993CEA4D27CD4F6A00811AE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 993CEA4C27CD4F6A00811AE3 /* GoogleService-Info.plist */; };
 		9944131627A9BD0300A1C021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9944131527A9BD0300A1C021 /* AppDelegate.swift */; };
 		9944131827A9BD0300A1C021 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9944131727A9BD0300A1C021 /* SceneDelegate.swift */; };
@@ -35,6 +37,8 @@
 /* Begin PBXFileReference section */
 		0994B50762C7270EB40567FF /* Pods_Trending_Movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trending_Movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E5EC78338E9DE46BC10D1D /* Pods-Trending Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trending Movies.release.xcconfig"; path = "Target Support Files/Pods-Trending Movies/Pods-Trending Movies.release.xcconfig"; sourceTree = "<group>"; };
+		991E6C5228077485002E6BF3 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		991E6C5328077485002E6BF3 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
 		993CEA4C27CD4F6A00811AE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9944131227A9BD0300A1C021 /* Trending Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trending Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9944131527A9BD0300A1C021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -250,8 +254,9 @@
 		990B65B32806595300F259B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9944134E27AB01A000A1C021 /* MovieTableViewCell.xib */,
 				9944133C27A9E82C00A1C021 /* PantallaPrincipalViewController.xib */,
+				9944134E27AB01A000A1C021 /* MovieTableViewCell.xib */,
+				991E6C5328077485002E6BF3 /* MovieCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 			children = (
 				9944134D27AB01A000A1C021 /* MovieTableViewCell.swift */,
 				9944133B27A9E82C00A1C021 /* PantallaPrincipalViewController.swift */,
+				991E6C5228077485002E6BF3 /* MovieCollectionViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -401,6 +407,7 @@
 				993CEA4D27CD4F6A00811AE3 /* GoogleService-Info.plist in Resources */,
 				9944135027AB01A000A1C021 /* MovieTableViewCell.xib in Resources */,
 				9944132527A9BD0500A1C021 /* LaunchScreen.storyboard in Resources */,
+				991E6C5528077485002E6BF3 /* MovieCollectionViewCell.xib in Resources */,
 				9944132D27A9C1D800A1C021 /* PrimeraPantallaViewController.xib in Resources */,
 				9944133627A9E7C200A1C021 /* PantallaRegistroViewController.xib in Resources */,
 				9944133A27A9E81500A1C021 /* PantallaLogInViewController.xib in Resources */,
@@ -458,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9944134427AA048500A1C021 /* Model.swift in Sources */,
+				991E6C5428077485002E6BF3 /* MovieCollectionViewCell.swift in Sources */,
 				9944131A27A9BD0300A1C021 /* PrimeraPantallaViewController.swift in Sources */,
 				9944131627A9BD0300A1C021 /* AppDelegate.swift in Sources */,
 				9944133D27A9E82C00A1C021 /* PantallaPrincipalViewController.swift in Sources */,
