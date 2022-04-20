@@ -11,7 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PantallaPrincipalViewController" customModule="Trending_Movies" customModuleProvider="target">
             <connections>
                 <outlet property="movieSlider" destination="hq7-DV-yB7" id="NwO-FP-avQ"/>
-                <outlet property="tableView" destination="5tp-SL-tfq" id="ZqZ-05-laa"/>
+                <outlet property="tableView" destination="5tp-SL-tfq" id="1Co-px-X9C"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

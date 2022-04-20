@@ -5,37 +5,39 @@
 //  Created by Maximiliano Ituarte on 01/02/2022.
 //
 
+
 import Foundation
 
-class MovieViewModel {
+class MoviesViewModel {
     
-    private var apiService = ApiService()
-    private var popularMovies = [Movie]()
+    private var moviesService: MoviesListService
+    private var movies = [MovieList]()
+    private var delegate: MoviesListDelegate
     
-    func fetchPopularMoviesData(completion: @escaping () -> ()) {
-        
-        
-        apiService.getPopularMoviesData { [weak self] (result) in
-            
-            switch result {
-            case .success(let listOf):
-                self?.popularMovies = listOf.movies
-                completion()
-            case .failure(let error):
-               
-                print("Error processing json data: \(error)")
-            }
+    init(service: MoviesListService, delegate: MoviesListDelegate) {
+        self.moviesService = service
+        self.delegate = delegate
+    }
+    
+    func getMovies(){
+        moviesService.getMovies {response in
+            self.movies = response
+            self.delegate.reloadTableView()
+        } onError: {
+            self.delegate.reloadTableView()
         }
     }
     
-    func numberOfRowsInSection(section: Int) -> Int {
-        if popularMovies.count != 0 {
-            return popularMovies.count
-        }
-        return 0
+    func getMovie(at index: Int) -> MovieList {
+        return movies[index]
     }
     
-    func cellForRowAt (indexPath: IndexPath) -> Movie {
-        return popularMovies[indexPath.row]
+    func getMoviesCount() -> Int {
+        return movies.count
+        
     }
+    
+    let imageError : String = "Unexpected error loading image"
 }
+
+

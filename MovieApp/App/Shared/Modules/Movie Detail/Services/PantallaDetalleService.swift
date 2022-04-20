@@ -1,31 +1,27 @@
 //
-//  SliderService.swift
+//  PantallaDetallesService.swift
 //  Trending Movies
 //
-//  Created by Maximiliano Ituarte on 14/04/2022.
+//  Created by Maximiliano Ituarte on 20/04/2022.
 //
 
 import Foundation
 
-import Foundation
-
-
-class SliderService {
+class PantallaDetalleService{
     
-    let webserviceURL = Bundle.main.object(forInfoDictionaryKey: "WEBSERVICE_URL") as! String
-    
-    
-    func getAllSliders(onComplete: @escaping ([SlidersList]) -> Void, onError: @escaping () -> Void) {
-        ApiService.shared.get(url: "\(webserviceURL)api/slides") {response in
+    func getMovie(movieUrl: String, onComplete: @escaping (MovieDetail) -> Void, onError: @escaping () -> Void) {
+        ApiService.shared.get(url: movieUrl) {response in
             switch response {
             case .success(let data):
                 
                 do{
+                    
                     if let data = data{
                         let decoder = JSONDecoder()
                         decoder.keyDecodingStrategy = .convertFromSnakeCase
-                        let sliderResponse = try decoder.decode(SliderListResponse.self, from: data)
-                        onComplete(sliderResponse.data)
+                        let movieResponse = try decoder.decode(MovieDetail.self, from: data)
+                        print(movieResponse)
+                        onComplete(movieResponse)
                     }else{
                         onError()
                     }
