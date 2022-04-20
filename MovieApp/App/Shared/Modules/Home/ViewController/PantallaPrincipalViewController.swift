@@ -18,11 +18,11 @@ class PantallaPrincipalViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet var tableView: UITableView!
     
-    
-    @IBOutlet var movieSlider: UICollectionView!
+
     
     private let service = MoviesListService()
     private var viewModel: MoviesViewModel?
+    private let service2 = SliderService()
 
         override func viewDidLoad() {
             
@@ -56,7 +56,8 @@ class PantallaPrincipalViewController: UIViewController, UITableViewDelegate {
     
 }
 
-   extension PantallaPrincipalViewController: MoviesListDelegate {
+extension PantallaPrincipalViewController: MoviesListDelegate {
+    
     func reloadTableView() {
         self.tableView.reloadData()
     }
@@ -65,13 +66,14 @@ class PantallaPrincipalViewController: UIViewController, UITableViewDelegate {
 
     // MARK: - TableView
 extension PantallaPrincipalViewController {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let movie = self.viewModel?.getMovie(at: indexPath.row)
-//     // let movieDetail = MoviesDetailViewController()
-//        let movieId = movie!.id
-//        let movieUrl = Constants().MoviesDetailURL + "\(String(describing: movieId))" + "?" + Constants().ApiKey
-//      //  movieDetail.movieUrl = movieUrl
-//      //  self.navigationController?.pushViewController(movieDetail, animated: true)
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movie = self.viewModel?.getMovie(at: indexPath.row)
+        let movieDetail = PantallaDetalleViewController()
+        let movieId = movie!.id
+        let movieUrl = Constants().MoviesDetailURL + "\(String(describing: movieId))" + "?" + Constants().ApiKey
+        movieDetail.movieUrl = movieUrl
+         movieDetail.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+         present(movieDetail, animated: true, completion: nil)
     }
 }
 

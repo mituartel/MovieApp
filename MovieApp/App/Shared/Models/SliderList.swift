@@ -8,5 +8,5 @@
 import Foundation
 
 struct SlidersList: Codable {
-    let image: String?
+    let poster_path: String?
     }

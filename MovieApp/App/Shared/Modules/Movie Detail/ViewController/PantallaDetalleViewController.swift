@@ -30,9 +30,15 @@ class PantallaDetalleViewController: UIViewController {
         super.viewDidLoad()
 
         if let url = movieUrl {
+            movieTitle.adjustsFontSizeToFitWidth = true
+            movieOverview.adjustsFontForContentSizeCategory = true 
             self.viewModel = PantallaDetalleViewModel(movieUrl: url, service: self.service, delegate: self)
             self.viewModel?.getMovie()
         }
+    }
+    
+    @IBAction func goBackButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     private func setupView() {
@@ -50,6 +56,7 @@ extension PantallaDetalleViewController: MoviesDetailDelegate {
     func loadMovieData(movie: MovieDetail) {
         self.movieTitle.text = movie.title
         self.movieOverview.text = movie.overview
+        
         
         if let url = movie.backdropPath, let fullUrl = URL(string: Constants().imageURL + url){
                     self.moviePoster.load(url: fullUrl)

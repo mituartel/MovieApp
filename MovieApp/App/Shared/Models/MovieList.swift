@@ -13,6 +13,6 @@ struct MovieList: Codable {
     let poster_path: String?
     let release_date: String?
     let vote_average: Double
-    
+    let id: Int 
     }
 

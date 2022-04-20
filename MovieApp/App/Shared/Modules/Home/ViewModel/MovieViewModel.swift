@@ -8,6 +8,8 @@
 
 import Foundation
 
+import Foundation
+
 class MoviesViewModel {
     
     private var moviesService: MoviesListService
