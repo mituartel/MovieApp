@@ -27,7 +27,7 @@ class PantallaPrincipalViewController: UIViewController, UITableViewDelegate {
         override func viewDidLoad() {
             
             super.viewDidLoad()
-            
+
             self.viewModel = MoviesViewModel(service: self.service, delegate: self)
             self.viewModel?.getMovies()
             self.tableView.register(UINib(nibName: "MovieTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
@@ -105,7 +105,6 @@ extension PantallaPrincipalViewController: UITableViewDataSource {
             let imageUrl = URL(string: completePath)
             cell.moviePoster.load(url: imageUrl!)
       
-        
         
         return cell
     }
