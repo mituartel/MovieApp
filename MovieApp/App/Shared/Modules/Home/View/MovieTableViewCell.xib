@@ -64,7 +64,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" systemColor="labelColor"/>
+                <color key="backgroundColor" red="0.3529411764705882" green="0.27450980392156865" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 <color key="tintColor" systemColor="systemYellowColor"/>
                 <constraints>
                     <constraint firstItem="MoI-k5-qvH" firstAttribute="leading" secondItem="Dio-6j-LgN" secondAttribute="trailing" constant="19" id="2Ah-gR-a4u"/>

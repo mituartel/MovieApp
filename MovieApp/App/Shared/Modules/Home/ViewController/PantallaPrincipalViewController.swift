@@ -30,7 +30,6 @@ class PantallaPrincipalViewController: UIViewController, UITableViewDelegate {
             
             self.viewModel = MoviesViewModel(service: self.service, delegate: self)
             self.viewModel?.getMovies()
-            
             self.tableView.register(UINib(nibName: "MovieTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
             self.tableView.delegate = self
             self.tableView.dataSource = self
